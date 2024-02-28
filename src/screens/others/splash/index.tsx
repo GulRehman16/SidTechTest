@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, Image, Animated, StyleSheet } from 'react-native';
 import { AppRoutes } from '../../../config/appRoutes';
+import { Images } from '../../../constants';
 
 const Splash: React.FC<{ navigation: any }> = ({ navigation }) => {
         const [animation] = useState(new Animated.Value(0));
@@ -30,7 +31,7 @@ const Splash: React.FC<{ navigation: any }> = ({ navigation }) => {
             <Animated.View style={[styles.logoContainer, { opacity }]}>
                 <Animated.Image
                     resizeMethod={'auto'}
-                    source={{ uri: 'https://i.pinimg.com/originals/82/c6/5b/82c65b9bb0a75026fc4c82a438b4cc9b.jpg' }}
+                    source={Images.Icons.SplashLogo}
                     style={[styles.logo, { transform: [{ translateY }] }]}
                 />
             </Animated.View>

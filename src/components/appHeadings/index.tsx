@@ -1,10 +1,9 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { View, Text, Pressable, PressableProps } from 'react-native';
-import { AppHeadingStyles, AppStyles, AuthHeadingStyles } from '../../constants/appStyles';
-import { Images, Themes } from '../../constants';
+import {AppStyles, AuthHeadingStyles } from '../../constants/appStyles';
+import { Themes } from '../../constants';
 import { AppIcons } from '../appIcons';
-import FastImage from 'react-native-fast-image';
 
 interface AuthHeadingProps {
   isUri?: boolean;

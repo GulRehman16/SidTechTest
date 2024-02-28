@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import { TextInput, View, Text, StyleSheet, Pressable, TextStyle, ViewStyle } from 'react-native';
 import { Themes } from '../../constants';
 import { AppStyles } from '../../constants/appStyles';
-// import PhoneInput from 'react-native-phone-number-input';
 import Icon from 'react-native-vector-icons/AntDesign';
 
 interface Props {
@@ -27,11 +26,7 @@ interface Props {
   phoneIconWidth?: number;
   editable?: boolean;
   label?: string;
-  code?: string;
   onChangeCountry?: (code: string) => void;
-  iconRColor?: string;
-  iconRSize?: number;
-  RightComp?: React.FC;
   selectTextOnFocus?: boolean;
   pointerEvents?: 'auto' | 'none' | 'box-none' | 'box-only';
 }
@@ -44,11 +39,9 @@ const FormTextInput: React.FC<Props> = ({
   onBlur,
   onFocus,
   secureText,
-
   iconL,
   iconLName,
   styleI,
-  onPressR,
   multiLine,
   autoCapitalize,
   height,

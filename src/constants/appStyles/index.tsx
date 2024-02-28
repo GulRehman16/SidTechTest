@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { Themes, Families, Fonts, BorRadius } from '../themes';
 
-const { PoppinsRegular, PoppinsMedium, PoppinsSemibold, PoppinsBold } = Families?.poppins;
+const {  PoppinsMedium } = Families?.poppins;
 
 export const AppStyles = StyleSheet.create({
     container: {
@@ -13,34 +13,7 @@ export const AppStyles = StyleSheet.create({
         justifyContent: 'center'
 
     },
-    shadow: {
-        borderWidth: 0, elevation: 5, shadowColor: Themes.shadowColors.pureBlack, shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.25, shadowRadius: 5,
-    },
-    appTextRegular: {
-        fontFamily: PoppinsRegular, fontWeight: '400', fontStyle: 'normal',
-    },
-    appTextMedium: {
-        fontFamily: PoppinsMedium, fontWeight: '500', fontStyle: 'normal',
-    },
-    appTextSemiBold: {
-        fontFamily: PoppinsSemibold, fontWeight: '600', fontStyle: 'normal',
-    },
-    appTextBold: {
-        fontFamily: PoppinsBold, fontStyle: 'normal',
-    },
-    appSecText: {
-        color: Themes.secondary, fontSize: Fonts.font16,
-    },
-    defaultText: {
-        color: Themes.textColors.gray, fontSize: Fonts.font20,
-    },
-    ericColor: {
-        color: Themes.textColors.erieBlack,
-    },
-    capitalText: {
-        textTransform: 'capitalize',
-    },
+   
     errorMessage: {
         fontSize: Fonts.font14, color: Themes.statusColors.danger,
     },
@@ -89,20 +62,7 @@ export const AppStyles = StyleSheet.create({
 });
 
 
-export const AppBorderButtonStyles = StyleSheet.create({
-    appBorderButtonWrapper: {
-        display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center',
-        flex: 1, padding: 8, backgroundColor: Themes.bgColors.white, borderRadius: BorRadius.borderRadius1, minHeight: 40,
-        borderWidth: 1, borderColor: Themes.borderColors.gainsBoro,
-    },
-    appBorderButtonImage: {
-        height: 24, width: 24, marginRight: 10,
-    },
-    appBorderButton: {
-        color: Themes.borderColors.cobaltBlue, textTransform: 'capitalize',
-        fontSize: Fonts.font16, textAlign: 'center', top: 1,
-    },
-});
+
 
 export const AppAuthButtonStyles = StyleSheet.create({
     appAuthButtonWrapper: {
@@ -114,20 +74,8 @@ export const AppAuthButtonStyles = StyleSheet.create({
     },
 });
 
-export const AppPriButtonStyles = StyleSheet.create({
-    appBorderButtonWrapper: {
-        display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center',
-        flex: 1, padding: 8, backgroundColor: Themes.bgColors.whiteTransparent, minHeight: 40, marginVertical: 15,
-    },
-    appBorderButtonImage: {
-        height: 24, width: 24, marginRight: 10,
-    },
-    appBorderButton: {
-        color: Themes.textColors.davyGray, fontSize: Fonts.font14, textAlign: 'center', top: 1,
-    },
-});
 
-// headings components
+
 export const AuthHeadingStyles = StyleSheet.create({
     authHeading: {
         fontSize: Fonts.font24, color: Themes.textColors.raisinBlack, textAlign: 'center',
@@ -155,41 +103,6 @@ export const AuthHeadingStyles = StyleSheet.create({
     },
 });
 
-export const AppHeadingStyles = StyleSheet.create({
-    wrapper: {
-        flexDirection: 'row', alignItems: 'center',
-    },
-    flex: {
-        flex: 1,
-    },
-    halfFlex: {
-        flex: 0.2, justifyContent: 'center', alignItems: 'flex-start',
-        marginTop: 6
-    },
-    drawerImg: {
-        height: 30, width: 30,
-    },
-    title: {
-        fontSize: Fonts.font16, color: Themes.textColors.jetBlack, alignSelf: 'center',
-    },
-    image: {
-        height: 50, width: 'auto',
-    },
-});
 
-// dropdown components
-export const AppDropDownStyles = StyleSheet.create({
-    dropDownPicker: {
-        backgroundColor: Themes.bgColors.white, height: 40, borderWidth: 0,
-        borderBottomWidth: 2, borderBottomColor: Themes.borderColors.platinum,
-        zIndex: 99999, borderRadius: 0, paddingHorizontal: 0,
-    },
-    searchTextInputStyle: {
-        borderWidth: 0, borderBottomColor: Themes.borderColors.platinum,
-        borderBottomWidth: 1, borderRadius: 0,
-    },
-    dropDownContainerStyle: {
-        zIndex: 99999, borderWidth: 0, elevation: 5, shadowColor: Themes.shadowColors.pureBlack, shadowOffset: { width: 0, height: 2 },
-        shadowOpacity: 0.25, shadowRadius: 5,
-    },
-});
+
+

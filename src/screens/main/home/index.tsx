@@ -5,20 +5,15 @@ import { Themes } from '../../../constants';
 import { AppRoutes } from '../../../config/appRoutes';
 import { AppStyles } from '../../../constants/appStyles';
 import { useSelector, useDispatch } from 'react-redux';
-import { RootState, store } from '../../../redux/store';
+import { RootState } from '../../../redux/store';
 import { deleteContact, setContacts } from '../../../redux/contactSlice';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
-
-
-
 
 const Home: React.FC<{ navigation: any }> = ({ navigation }) => {
 
   const dispatch = useDispatch();
 
   const contacts = useSelector((state: RootState) => state.contacts.contacts);
-
 
   useEffect(() => {
     const loadContacts = async () => {
@@ -66,11 +61,11 @@ const styles = StyleSheet.create({
   contentContainer: {
     backgroundColor: Themes.bgColors.white,
     width: '90%',
-    marginTop: 50,
+    marginTop: 42,
     height: '100%',
     justifyContent: 'center',
     alignSelf: 'center',
-    paddingBottom: 100,
+    paddingBottom: 80,
   },
   addIcon: {
     position: 'absolute',
