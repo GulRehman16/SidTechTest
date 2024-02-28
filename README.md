@@ -33,9 +33,15 @@ React Native version : 0.73.5
 # using npm
 
 npm run android
+Node version : v20.11.1
+JDK:17
+React Native version : 0.73.5
 
 # OR using Yarn
 yarn run android
+Node version : v20.11.1
+JDK:17
+React Native version : 0.73.5
 
 ```
 
